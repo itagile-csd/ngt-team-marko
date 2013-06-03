@@ -16,7 +16,7 @@ namespace NerdGolfTracker.Befehle
 
         public string Erklaerung
         {
-            get { return "zaehlt einen Schlag"; }
+            get { return "zaehlt einen Schlag."; }
         }
     }
 }

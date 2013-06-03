@@ -16,7 +16,7 @@ namespace NerdGolfTracker.Befehle
 
         public string Erklaerung
         {
-            get { return "zeigt Dir diese Erklaerung"; }
+            get { return "zeigt Dir diese Erklaerung."; }
         }
     }
 }
