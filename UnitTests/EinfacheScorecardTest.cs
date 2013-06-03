@@ -35,5 +35,15 @@ namespace UnitTests
             _scorecard.SchliesseLochAb();
             Assert.That(_scorecard.Lochnummer, Is.EqualTo(2));
         }
+
+        [Test]
+        public void SchlagzahlBeiNeuemLochIstNull()
+        {
+            _scorecard.ErhoeheAnzahlSchlaege();
+            _scorecard.SchliesseLochAb();
+            Assert.That(_scorecard.AnzahlSchlaege, Is.EqualTo(0));
+        }
+
+
     }
 }
