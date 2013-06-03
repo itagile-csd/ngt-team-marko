@@ -6,13 +6,13 @@ namespace NerdGolfTracker
 {
     class AlleBefehle
     {
-        public List<Befehl> Befehle()
+        public List<IBefehl> Befehle()
         {
-            var befehlstyp = typeof (Befehl);
+            var befehlstyp = typeof (IBefehl);
             var alleBefehlstypen = 
                 GetType().Assembly.GetTypes().Where(befehlstyp.IsAssignableFrom);
             var alleKonkretenBefehlstypen = alleBefehlstypen.Except(new[] { befehlstyp }).ToList();
-            return alleKonkretenBefehlstypen.ConvertAll(b => Activator.CreateInstance(b) as Befehl);
+            return alleKonkretenBefehlstypen.ConvertAll(b => Activator.CreateInstance(b) as IBefehl);
         }
     }
 }

@@ -11,7 +11,7 @@ namespace UnitTests.Operationen
         [Test]
         public void ErhoehtDieSchlagzahlAufDerScorecard()
         {
-            var scorecardMock = new Mock<Scorecard>();
+            var scorecardMock = new Mock<IScorecard>();
             new Schlag().FuehreAus(scorecardMock.Object);
             scorecardMock.Verify(scorecard => scorecard.ErhoeheAnzahlSchlaege());
         }

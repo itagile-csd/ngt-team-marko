@@ -12,7 +12,7 @@ namespace UnitTests.Operationen
         [TestCase(2, Result = "2 Schlaege")]
         public string GibtSchlagzahlenAus(int schlagzahl)
         {
-            var scorecardStub = new Mock<Scorecard>();
+            var scorecardStub = new Mock<IScorecard>();
             scorecardStub.Setup(scorecard => scorecard.AnzahlSchlaege).Returns(schlagzahl);
             return new Schlagausgabe().FuehreAus(scorecardStub.Object);
         }

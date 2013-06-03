@@ -3,9 +3,9 @@ using NerdGolfTracker.Befehle;
 
 namespace NerdGolfTracker.Operationen
 {
-    public class Hilfe : Operation
+    public class Hilfe : IOperation
     {
-        public string FuehreAus(Scorecard scorecard)
+        public string FuehreAus(IScorecard scorecard)
         {
             var hilfstexte = new AlleBefehle().Befehle().ConvertAll(HilfstextFuer);
             return "Ich helfe dir beim Fuehren der Scorecard. Ich reagiere auf folgende Befehle: " +
@@ -13,7 +13,7 @@ namespace NerdGolfTracker.Operationen
                    + ".";
         }
 
-        private string HilfstextFuer(Befehl befehl)
+        private string HilfstextFuer(IBefehl befehl)
         {
             return string.Format(" * \"{0}\" {1}", befehl.Kommando, befehl.Erklaerung);
         }
