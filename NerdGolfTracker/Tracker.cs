@@ -15,7 +15,14 @@
 
         public string ReagiereAuf(string kommando)
         {
-            return _interpreter.OperationFuer(kommando).FuehreAus(_scorecard);
+            string result = "Unbekannter Befehl";
+
+            IOperation operation = _interpreter.OperationFuer(kommando);
+            if (operation != null)
+            {
+                result = operation.FuehreAus(_scorecard);
+            }
+            return result;
         }
 
         public string Starte()

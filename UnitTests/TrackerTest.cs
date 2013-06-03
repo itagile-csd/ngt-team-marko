@@ -29,5 +29,14 @@ namespace UnitTests
             var tracker = new Tracker(null, null, startoperationStub.Object);
             Assert.That(tracker.Starte(), Is.EqualTo("Ausgabe"));
         }
+        [Test]
+        public void UnknownOperation()
+        {
+            var mockInterpreter = new Mock<IInterpreter>();
+            mockInterpreter.Setup(interpreter => interpreter.OperationFuer(It.IsAny<string>())).Returns(() => null);
+            var tracker = new Tracker(mockInterpreter.Object, null, null);
+          
+            Assert.AreEqual(tracker.ReagiereAuf(""), "Unbekannter Befehl");
+        }
     }
 }
