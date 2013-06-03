@@ -3,11 +3,11 @@ using NerdGolfTracker.Befehle;
 
 namespace NerdGolfTracker
 {
-    public class EinfacherInterpreter : Interpreter
+    public class EinfacherInterpreter : IInterpreter
     {
-        public Operation OperationFuer(string kommando)
+        public IOperation OperationFuer(string kommando)
         {
-            List<Befehl> befehle = new AlleBefehle().Befehle();
+            List<IBefehl> befehle = new AlleBefehle().Befehle();
             return befehle.Find(befehl => kommando == befehl.Kommando).Operation;
         }
     }

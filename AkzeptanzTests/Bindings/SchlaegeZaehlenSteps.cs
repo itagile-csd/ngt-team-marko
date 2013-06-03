@@ -16,6 +16,7 @@ namespace AkzeptanzTests.Bindings
         public void PruefeSchlagzahl(int schlagzahl, string schlagnomen)
         {
             _driver.AssertThatAntwortContains("{0}", schlagzahl);
+            _driver.AssertThatAntwortContains("{0}", schlagnomen);
         }
     }
 }

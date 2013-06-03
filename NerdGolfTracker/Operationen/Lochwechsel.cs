@@ -1,8 +1,8 @@
 namespace NerdGolfTracker.Operationen
 {
-    public class Lochwechsel : Operation
+    public class Lochwechsel : IOperation
     {
-        public string FuehreAus(Scorecard scorecard)
+        public string FuehreAus(IScorecard scorecard)
         {
             scorecard.SchliesseLochAb();
             return new Lochbegruessung().FuehreAus(scorecard);

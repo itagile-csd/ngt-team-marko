@@ -1,8 +1,8 @@
 namespace NerdGolfTracker.Operationen
 {
-    public class Lochausgabe : Operation
+    public class Lochausgabe : IOperation
     {
-        public string FuehreAus(Scorecard scorecard)
+        public string FuehreAus(IScorecard scorecard)
         {
             return string.Format("auf dem {0}.Loch", scorecard.Lochnummer);
         }

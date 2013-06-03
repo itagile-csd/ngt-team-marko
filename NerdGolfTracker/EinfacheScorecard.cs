@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace NerdGolfTracker
 {
-    public class EinfacheScorecard : Scorecard
+    public class EinfacheScorecard : IScorecard
     {
         public int AnzahlSchlaege { get; private set; }
         public int Lochnummer { get; private set; }

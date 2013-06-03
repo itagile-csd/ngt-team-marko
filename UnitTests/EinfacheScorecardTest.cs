@@ -6,7 +6,7 @@ namespace UnitTests
     [TestFixture]
     public class EinfacheScorecardTest
     {
-        private Scorecard _scorecard;
+        private IScorecard _scorecard;
 
         [SetUp]
         public void InitialisiereScorecard()

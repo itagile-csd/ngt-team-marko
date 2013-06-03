@@ -14,7 +14,7 @@ namespace UnitTests
         [TestCase("Hilfe", typeof(Hilfe))]
         public void FindetOperation(string kommando, Type operationstyp)
         {
-            Interpreter interpreter = new EinfacherInterpreter();
+            IInterpreter interpreter = new EinfacherInterpreter();
             Assert.That(interpreter.OperationFuer(kommando), Is.InstanceOf(operationstyp));
         }
     }
