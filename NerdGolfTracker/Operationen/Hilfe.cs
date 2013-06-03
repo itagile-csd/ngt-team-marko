@@ -9,8 +9,7 @@ namespace NerdGolfTracker.Operationen
         {
             var hilfstexte = new AlleBefehle().Befehle().ConvertAll(HilfstextFuer);
             return "Ich helfe dir beim Fuehren der Scorecard. Ich reagiere auf folgende Befehle: \n" +
-                   string.Join(System.Environment.NewLine, hilfstexte)
-                   + ".";
+                   string.Join(System.Environment.NewLine, hilfstexte);
         }
 
         private string HilfstextFuer(IBefehl befehl)
