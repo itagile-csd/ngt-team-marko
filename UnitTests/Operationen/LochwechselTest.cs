@@ -11,7 +11,7 @@ namespace UnitTests.Operationen
         [Test]
         public void SchliesstLochAb()
         {
-            var scorecardMock = new Mock<Scorecard>();
+            var scorecardMock = new Mock<IScorecard>();
             new Lochwechsel().FuehreAus(scorecardMock.Object);
             scorecardMock.Verify(scorecard => scorecard.SchliesseLochAb());
         }

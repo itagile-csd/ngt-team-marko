@@ -2,11 +2,11 @@
 {
     public class Tracker
     {
-        private Operation _startoperation;
-        private Scorecard _scorecard;
-        private Interpreter _interpreter;
+        private IOperation _startoperation;
+        private IScorecard _scorecard;
+        private IInterpreter _interpreter;
 
-        public Tracker(Interpreter interpreter, Scorecard scorecard, Operation startoperation)
+        public Tracker(IInterpreter interpreter, IScorecard scorecard, IOperation startoperation)
         {
             _interpreter = interpreter;
             _scorecard = scorecard;

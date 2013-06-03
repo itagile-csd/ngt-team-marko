@@ -2,14 +2,14 @@ using NerdGolfTracker.Operationen;
 
 namespace NerdGolfTracker.Befehle
 {
-    public class SchlagBefehl : Befehl
+    public class SchlagBefehl : IBefehl
     {
         public string Kommando
         {
             get { return "Schlage Ball"; }
         }
 
-        public Operation Operation
+        public IOperation Operation
         {
             get { return new Schlag(); }
         }

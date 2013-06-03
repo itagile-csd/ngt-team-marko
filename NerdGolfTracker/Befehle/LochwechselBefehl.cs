@@ -2,14 +2,14 @@ using NerdGolfTracker.Operationen;
 
 namespace NerdGolfTracker.Befehle
 {
-    public class LochwechselBefehl : Befehl
+    public class LochwechselBefehl : IBefehl
     {
         public string Kommando
         {
             get { return "Naechstes Loch"; }
         }
 
-        public Operation Operation
+        public IOperation Operation
         {
             get { return new Lochwechsel(); }
         }

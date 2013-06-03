@@ -1,6 +1,6 @@
 namespace NerdGolfTracker
 {
-    public interface Scorecard
+    public interface IScorecard
     {
         int AnzahlSchlaege { get; }
         int Lochnummer { get; }

@@ -1,8 +1,8 @@
 namespace NerdGolfTracker.Operationen
 {
-    public class Schlagausgabe : Operation
+    public class Schlagausgabe : IOperation
     {
-        public string FuehreAus(Scorecard scorecard)
+        public string FuehreAus(IScorecard scorecard)
         {
             return string.Format("{0} Schlag", scorecard.AnzahlSchlaege);
         }

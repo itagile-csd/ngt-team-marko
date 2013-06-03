@@ -1,9 +1,9 @@
 namespace NerdGolfTracker
 {
-    public interface Befehl
+    public interface IBefehl
     {
         string Kommando { get; }
-        Operation Operation { get; }
+        IOperation Operation { get; }
         string Erklaerung { get; }
     }
 }
