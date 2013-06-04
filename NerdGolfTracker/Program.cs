@@ -16,7 +16,7 @@ namespace NerdGolfTracker
             {
                 var befehl = Console.ReadLine();
                 Console.WriteLine(tracker.ReagiereAuf(befehl));
-                if (befehl.Contains("ende"))
+                if (befehl == "Ende")
                 {
                     ende = true;
                 }

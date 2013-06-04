@@ -10,7 +10,7 @@ namespace NerdGolfTracker.Befehle
     {
         public string Kommando
         {
-            get { return "Spielende"; }
+            get { return "Ende"; }
         }
 
         public IOperation Operation
@@ -20,7 +20,7 @@ namespace NerdGolfTracker.Befehle
 
         public string Erklaerung
         {
-            get { return "Beendet das Spiel."; }
+            get { return "beendet das Spiel."; }
         }
     }
 }

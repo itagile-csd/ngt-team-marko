@@ -15,7 +15,7 @@ namespace UnitTests.Befehle
         public void KommandoTest()
         {
             var befehl = new SpielendeBefehl();
-            Assert.That(befehl.Kommando, Is.EqualTo("Spielende"));
+            Assert.That(befehl.Kommando, Is.EqualTo("Ende"));
         }
 
         [Test]
@@ -29,7 +29,7 @@ namespace UnitTests.Befehle
         public void ErklaerungTest()
         {
             var befehl = new SpielendeBefehl();
-            Assert.That(befehl.Erklaerung, Is.EqualTo("Beendet das Spiel."));
+            Assert.That(befehl.Erklaerung, Is.EqualTo("beendet das Spiel."));
         }
     }
 }

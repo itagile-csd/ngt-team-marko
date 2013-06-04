@@ -23,7 +23,10 @@ namespace AkzeptanzTests
 
         public void Beende()
         {
-            _tracker.Kill();
+            if (!_tracker.HasExited)
+            {
+                _tracker.Kill();    
+            }
         }
 
         public void EmpfangeAnweisung(string anweisung)

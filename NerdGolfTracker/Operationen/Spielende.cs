@@ -9,7 +9,8 @@ namespace NerdGolfTracker.Operationen
     {
         public string FuehreAus(IScorecard scorecard)
         {
-            return string.Format("Das Spiel ist beendet. Du hattest {0} Schlaege.", scorecard.AnzahlSchlaege);
+            return "Das Spiel ist beendet.";
+            //return string.Format("Das Spiel ist beendet. Du hattest {0} Schlaege.", scorecard.AnzahlSchlaege);
         }
     }
 }
