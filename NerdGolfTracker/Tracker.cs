@@ -15,7 +15,7 @@
 
         public string ReagiereAuf(string kommando)
         {
-            string result = "\"" + kommando + "\" ist kein zulaessiger Befehl, \"Hilfe\" zeigt alle Befehle";
+            string result = "\"" + kommando + "\" ist kein zulaessiger Befehl, \"Hilfe\" zeigt alle Befehle.";
 
             IOperation operation = _interpreter.OperationFuer(kommando);
             if (operation != null)

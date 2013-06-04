@@ -35,7 +35,7 @@ namespace UnitTests
             var mockInterpreter = new Mock<IInterpreter>();
             mockInterpreter.Setup(interpreter => interpreter.OperationFuer(It.IsAny<string>())).Returns(() => null);
             var tracker = new Tracker(mockInterpreter.Object, null, null);
-            string result = "\"" + command + "\" ist kein zulaessiger Befehl, \"Hilfe\" zeigt alle Befehle";
+            string result = "\"" + command + "\" ist kein zulaessiger Befehl, \"Hilfe\" zeigt alle Befehle.";
 
             Assert.AreEqual(tracker.ReagiereAuf(command), result);
         }
