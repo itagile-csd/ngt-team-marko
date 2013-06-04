@@ -7,8 +7,14 @@ namespace NerdGolfTracker
     {
         public IOperation OperationFuer(string kommando)
         {
+            IOperation result = null;
             List<IBefehl> befehle = new AlleBefehle().Befehle();
-            return befehle.Find(befehl => kommando == befehl.Kommando).Operation;
+            IBefehl befehl = befehle.Find(b => kommando == b.Kommando);
+            if (befehl != null)
+            {
+                result = befehl.Operation;
+            }
+            return result;
         }
     }
 }

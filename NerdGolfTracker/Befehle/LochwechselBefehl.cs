@@ -19,4 +19,6 @@ namespace NerdGolfTracker.Befehle
             get { return "bringt Dich zum naechsten Loch."; }
         }
     }
+
+  
 }

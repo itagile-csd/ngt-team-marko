@@ -18,5 +18,13 @@ namespace UnitTests
             IInterpreter interpreter = new EinfacherInterpreter();
             Assert.That(interpreter.OperationFuer(kommando), Is.InstanceOf(operationstyp));
         }
+
+        [Test]
+        public void UnknownInput()
+        {
+            IInterpreter interpreter = new EinfacherInterpreter();
+            Assert.DoesNotThrow(()=> interpreter.OperationFuer(""));
+
+        }
     }
 }
