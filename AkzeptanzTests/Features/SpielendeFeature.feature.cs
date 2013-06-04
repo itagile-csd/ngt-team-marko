@@ -19,20 +19,20 @@ namespace AkzeptanzTests.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "1.9.1.84")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Lochwechsel")]
-    public partial class LochwechselFeature
+    [NUnit.Framework.DescriptionAttribute("Spielende")]
+    public partial class SpielendeFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "Lochwechsel.feature"
+#line 1 "SpielendeFeature.feature"
 #line hidden
         
         [NUnit.Framework.TestFixtureSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("de-DE"), "Lochwechsel", "", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("de-DE"), "Spielende", "", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -65,37 +65,16 @@ namespace AkzeptanzTests.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Schlagzahl zuruecksetzen")]
-        public virtual void SchlagzahlZuruecksetzen()
+        [NUnit.Framework.DescriptionAttribute("Spiel beenden")]
+        public virtual void SpielBeenden()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Schlagzahl zuruecksetzen", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Spiel beenden", ((string[])(null)));
 #line 3
 this.ScenarioSetup(scenarioInfo);
 #line 4
- testRunner.Given("ich habe den Ball einmal geschlagen,", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Angenommen ");
+ testRunner.When("ich das Spiel beende,", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Wenn ");
 #line 5
- testRunner.When("ich zum nächsten Loch gehe,", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Wenn ");
-#line 6
- testRunner.And("nun den Ball schlage,", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Und ");
-#line 7
- testRunner.Then("zählt der NerdGolfTracker 1 Schlag.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dann ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Loch hochzaehlen")]
-        public virtual void LochHochzaehlen()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Loch hochzaehlen", ((string[])(null)));
-#line 9
-this.ScenarioSetup(scenarioInfo);
-#line 10
- testRunner.When("ich zum nächsten Loch gehe,", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Wenn ");
-#line 11
- testRunner.And("nun den Ball schlage,", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Und ");
-#line 12
- testRunner.Then("zählt der NerdGolfTracker die Schläge auf dem 2. Loch.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dann ");
+ testRunner.Then("wird der NerdGolfTracker beendet.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dann ");
 #line hidden
             this.ScenarioCleanup();
         }
