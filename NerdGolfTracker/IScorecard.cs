@@ -8,5 +8,7 @@ namespace NerdGolfTracker
 
         void ErhoeheAnzahlSchlaege();
         void SchliesseLochAb();
+        bool Geschlossen { get; }
+        void SchliesseSpielAb();
     }
 }

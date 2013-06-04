@@ -52,5 +52,12 @@ namespace UnitTests
             Assert.AreEqual(2, _scorecard.GesamtSchlaege);
         }
 
+        [Test]
+        public void EndeTest()
+        {
+            _scorecard.SchliesseSpielAb();
+            Assert.IsTrue(_scorecard.Geschlossen);
+        }
+
     }
 }
