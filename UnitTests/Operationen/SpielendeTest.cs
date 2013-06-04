@@ -17,8 +17,7 @@ namespace UnitTests.Operationen
         {
             var scorecard = new Mock<IScorecard>();
             scorecard.Setup(sc => sc.AnzahlSchlaege).Returns(0);
-//            Assert.That(new Spielende().FuehreAus(scorecard.Object), Is.EqualTo("Das Spiel ist beendet. Du hattest 0 Schlaege."));
-            Assert.That(new Spielende().FuehreAus(scorecard.Object), Is.EqualTo("Das Spiel ist beendet."));
+            Assert.That(new Spielende().FuehreAus(scorecard.Object), Is.EqualTo("Das Spiel ist beendet. Du hattest 0 Schlaege."));
         }
     }
 }
