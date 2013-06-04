@@ -34,6 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Befehle\ZeigeErgebnisBefehl.cs" />
     <Compile Include="IBefehl.cs" />
     <Compile Include="Befehle\HilfeBefehl.cs" />
     <Compile Include="Befehle\LochwechselBefehl.cs" />
@@ -43,6 +44,7 @@
     <Compile Include="EinfacheScorecard.cs" />
     <Compile Include="IInterpreter.cs" />
     <Compile Include="IOperation.cs" />
+    <Compile Include="Operationen\ZeigeErgebnis.cs" />
     <Compile Include="Operationen\Hilfe.cs" />
     <Compile Include="Operationen\Lochausgabe.cs" />
     <Compile Include="Operationen\Lochbegruessung.cs" />
