@@ -2,19 +2,23 @@ using NerdGolfTracker.Operationen;
 
 namespace NerdGolfTracker.Befehle
 {
-    public class HilfeBefehl : IBefehl
+    public class HilfeBefehl : Befehl
     {
-        public string Kommando
+        protected override string Kommando
         {
             get { return "Hilfe"; }
         }
 
-        public IOperation Operation
+        public override IOperation Operation
         {
             get { return new Hilfe(); }
         }
 
-        public string Erklaerung
+        protected override string Kuerzel
+        {
+            get { return "h"; }
+        }
+        protected override string Erklaerung
         {
             get { return "zeigt Dir diese Erklaerung."; }
         }

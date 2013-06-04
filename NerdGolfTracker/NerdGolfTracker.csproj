@@ -34,6 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Befehl.cs" />
     <Compile Include="IBefehl.cs" />
     <Compile Include="Befehle\HilfeBefehl.cs" />
     <Compile Include="Befehle\LochwechselBefehl.cs" />

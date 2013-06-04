@@ -2,19 +2,22 @@ using NerdGolfTracker.Operationen;
 
 namespace NerdGolfTracker.Befehle
 {
-    public class SchlagBefehl : IBefehl
+    public class SchlagBefehl : Befehl
     {
-        public string Kommando
+        protected override string Kommando
         {
             get { return "Schlage Ball"; }
         }
 
-        public IOperation Operation
+        public override IOperation Operation
         {
             get { return new Schlag(); }
         }
-
-        public string Erklaerung
+        protected override string Kuerzel
+        {
+            get { return "sb"; }
+        }
+        protected override string Erklaerung
         {
             get { return "zaehlt einen Schlag."; }
         }

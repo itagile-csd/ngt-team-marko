@@ -12,9 +12,9 @@ namespace NerdGolfTracker.Operationen
                    string.Join(System.Environment.NewLine, hilfstexte);
         }
 
-        private string HilfstextFuer(IBefehl befehl)
+        private string HilfstextFuer(Befehl befehl)
         {
-            return string.Format(" * \"{0}\" {1}", befehl.Kommando, befehl.Erklaerung);
+            return befehl.HilfeText;
         }
     }
 }
