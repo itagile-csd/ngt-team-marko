@@ -17,7 +17,6 @@ namespace NerdGolfTracker
                 var befehl = Console.ReadLine();
                 Console.WriteLine(tracker.ReagiereAuf(befehl));
             }
-            Console.ReadLine();
         }
     }
 }
