@@ -13,3 +13,5 @@ Szenariogrundriss: Hilfe zu Kommandos
 	| Hilfe          |
 	| Schlage Ball   |
 	| Naechstes Loch |
+	| Ende           |
+	| Zeige Ergebnis |

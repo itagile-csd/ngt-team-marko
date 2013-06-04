@@ -35,8 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Befehl.cs" />
-    <Compile Include="Befehle\ZeigeErgebnisBefehl.cs" />
-    <Compile Include="Befehle\SpielendeBefehl.cs" />
+    <Compile Include="IBefehl.cs" />
     <Compile Include="Befehle\HilfeBefehl.cs" />
     <Compile Include="Befehle\LochwechselBefehl.cs" />
     <Compile Include="Befehle\SchlagBefehl.cs" />
@@ -45,14 +44,12 @@
     <Compile Include="EinfacheScorecard.cs" />
     <Compile Include="IInterpreter.cs" />
     <Compile Include="IOperation.cs" />
-    <Compile Include="Operationen\ZeigeErgebnis.cs" />
     <Compile Include="Operationen\Hilfe.cs" />
     <Compile Include="Operationen\Lochausgabe.cs" />
     <Compile Include="Operationen\Lochbegruessung.cs" />
     <Compile Include="Operationen\Lochwechsel.cs" />
     <Compile Include="Operationen\Schlag.cs" />
     <Compile Include="Operationen\Schlagausgabe.cs" />
-    <Compile Include="Operationen\Spielende.cs" />
     <Compile Include="Tracker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -34,9 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Befehl.cs" />
     <Compile Include="Befehle\ZeigeErgebnisBefehl.cs" />
     <Compile Include="Befehle\SpielendeBefehl.cs" />
+    <Compile Include="IBefehl.cs" />
     <Compile Include="Befehle\HilfeBefehl.cs" />
     <Compile Include="Befehle\LochwechselBefehl.cs" />
     <Compile Include="Befehle\SchlagBefehl.cs" />

@@ -15,7 +15,7 @@ namespace UnitTests.Operationen
         {
             var ausgabe = new Hilfe().FuehreAus(null);
             var zeilen = ausgabe.Split(new string[] { System.Environment.NewLine }, StringSplitOptions.None);
-            Assert.That(zeilen.Length, Is.EqualTo(3));
+            Assert.That(zeilen.Length, Is.EqualTo(5));
         }
     }
 }

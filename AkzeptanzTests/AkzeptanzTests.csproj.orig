@@ -109,13 +109,15 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Lochwechsel.feature.cs</LastGenOutput>
     </None>
+<<<<<<< HEAD
     <None Include="Features\ZeigeErgebnis.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>ZeigeErgebnis.feature.cs</LastGenOutput>
-    </None>
+=======
     <None Include="Features\SpielendeFeature.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>SpielendeFeature.feature.cs</LastGenOutput>
+>>>>>>> a31407e724c1508847329acafd0c5e8e97eaa72f
     </None>
     <None Include="Features\Unbekannte Eingabe.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>

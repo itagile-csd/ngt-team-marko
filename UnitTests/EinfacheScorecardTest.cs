@@ -44,6 +44,13 @@ namespace UnitTests
             Assert.That(_scorecard.AnzahlSchlaege, Is.EqualTo(0));
         }
 
+        [Test]
+        public void BerechneErgebnisEinfach()
+        {
+            _scorecard.ErhoeheAnzahlSchlaege();
+            _scorecard.ErhoeheAnzahlSchlaege();
+            Assert.AreEqual(2, _scorecard.GesamtSchlaege);
+        }
 
     }
 }

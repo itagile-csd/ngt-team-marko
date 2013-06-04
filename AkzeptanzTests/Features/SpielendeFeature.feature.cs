@@ -19,20 +19,20 @@ namespace AkzeptanzTests.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "1.9.1.84")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Hilfe")]
-    public partial class HilfeFeature
+    [NUnit.Framework.DescriptionAttribute("Spielende")]
+    public partial class SpielendeFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "Hilfe.feature"
+#line 1 "SpielendeFeature.feature"
 #line hidden
         
         [NUnit.Framework.TestFixtureSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("de-DE"), "Hilfe", "", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("de-DE"), "Spielende", "", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -65,36 +65,16 @@ namespace AkzeptanzTests.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Allgemeine Hilfe")]
-        public virtual void AllgemeineHilfe()
+        [NUnit.Framework.DescriptionAttribute("Spiel beenden")]
+        public virtual void SpielBeenden()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Allgemeine Hilfe", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Spiel beenden", ((string[])(null)));
 #line 3
 this.ScenarioSetup(scenarioInfo);
 #line 4
- testRunner.When("ich die Hilfe aufrufe,", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Wenn ");
+ testRunner.When("ich das Spiel beende,", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Wenn ");
 #line 5
- testRunner.Then("zeigt der NerdGolfTracker seine Benutzung an.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dann ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Hilfe zu Kommandos")]
-        [NUnit.Framework.TestCaseAttribute("Hilfe", null)]
-        [NUnit.Framework.TestCaseAttribute("Schlage Ball", null)]
-        [NUnit.Framework.TestCaseAttribute("Naechstes Loch", null)]
-        [NUnit.Framework.TestCaseAttribute("Ende", null)]
-        [NUnit.Framework.TestCaseAttribute("Zeige Ergebnis", null)]
-        public virtual void HilfeZuKommandos(string kommando, string[] exampleTags)
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Hilfe zu Kommandos", exampleTags);
-#line 7
-this.ScenarioSetup(scenarioInfo);
-#line 8
- testRunner.When("ich die Hilfe aufrufe,", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Wenn ");
-#line 9
- testRunner.Then(string.Format("erklärt der NerdGolfTracker das Kommando \"{0}\".", kommando), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dann ");
+ testRunner.Then("wird der NerdGolfTracker beendet.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dann ");
 #line hidden
             this.ScenarioCleanup();
         }
