@@ -12,6 +12,7 @@ namespace UnitTests
         [TestCase("Naechstes Loch", typeof(Lochwechsel))]
         [TestCase("Schlage Ball", typeof(Schlag))]
         [TestCase("Hilfe", typeof(Hilfe))]
+        [TestCase("Spielende", typeof(Spielende))]
         public void FindetOperation(string kommando, Type operationstyp)
         {
             IInterpreter interpreter = new EinfacherInterpreter();

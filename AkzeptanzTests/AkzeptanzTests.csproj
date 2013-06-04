@@ -71,6 +71,7 @@
     </Compile>
     <Compile Include="TrackerDriver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Bindings\UnbekannteEingabeSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NerdGolfTracker\NerdGolfTracker.csproj">
