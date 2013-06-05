@@ -25,6 +25,11 @@ namespace NerdGolfTracker
             Lochnummer++;
             m_SchlaegeProLoch.Add(Lochnummer,0);        
         }
+        public void SchliesseSpielAb()
+        {
+            Geschlossen = true;
+        }
+        public bool Geschlossen { get; private set; }
 
         public void ErhoeheAnzahlSchlaege()
         {

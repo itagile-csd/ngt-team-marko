@@ -11,15 +11,11 @@ namespace NerdGolfTracker
                                       new EinfacheScorecard(),
                                       new Lochbegruessung());
             Console.WriteLine(tracker.Starte());
-            bool ende = false;
-            while (!ende)
+            
+            while (!tracker.Ende)
             {
                 var befehl = Console.ReadLine();
                 Console.WriteLine(tracker.ReagiereAuf(befehl));
-                if (befehl == "Ende")
-                {
-                    ende = true;
-                }
             }
         }
     }

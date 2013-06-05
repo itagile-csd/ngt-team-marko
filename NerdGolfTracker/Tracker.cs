@@ -22,8 +22,11 @@
             {
                 result = operation.FuehreAus(_scorecard);
             }
+            
             return result;
         }
+
+        public bool Ende { get { return _scorecard.Geschlossen; } }
 
         public string Starte()
         {

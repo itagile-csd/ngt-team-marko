@@ -53,6 +53,7 @@ namespace UnitTests
         }
 
         [Test]
+
         public void PrintScorecardEinSchlag()
         {
             _scorecard.ErhoeheAnzahlSchlaege();
@@ -67,6 +68,13 @@ namespace UnitTests
             _scorecard.ErhoeheAnzahlSchlaege();
             string ergebnis = _scorecard.Print();
             Assert.That(ergebnis.Contains("Loch 1:\t2 Schlaege"));
+        }
+
+        [Test]
+        public void EndeTest()
+        {
+            _scorecard.SchliesseSpielAb();
+            Assert.IsTrue(_scorecard.Geschlossen);
         }
 
     }

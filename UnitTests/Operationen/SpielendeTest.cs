@@ -19,5 +19,14 @@ namespace UnitTests.Operationen
             scorecard.Setup(sc => sc.AnzahlSchlaege).Returns(0);
             Assert.That(new Spielende().FuehreAus(scorecard.Object), Is.EqualTo("Das Spiel ist beendet. Du hattest 0 Schlaege."));
         }
+
+        [Test]
+        public void Spielende2()
+        {
+            var scorecard = new Mock<IScorecard>();
+            scorecard.Setup(sc => sc.SchliesseSpielAb()).Verifiable();
+            new Spielende().FuehreAus(scorecard.Object);
+            scorecard.VerifyAll();
+        }
     }
 }
