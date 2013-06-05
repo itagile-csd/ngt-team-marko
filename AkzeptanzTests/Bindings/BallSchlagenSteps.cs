@@ -16,6 +16,7 @@ namespace AkzeptanzTests.Bindings
 
         [Given(@".* Ball.* einmal geschlagen.*")]
         [When(@".* Ball.* schlage.*")]
+        [Then(@"nun den Ball schlage,")]
         public void SchlageBall()
         {
             _driver.EmpfangeAnweisung(SchlagBefehl.SCHLAGEBALL);

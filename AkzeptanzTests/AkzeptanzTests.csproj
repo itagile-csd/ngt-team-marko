@@ -43,7 +43,6 @@
     <Compile Include="Bindings\HilfeSteps.cs" />
     <Compile Include="Bindings\LochwechselSteps.cs" />
     <Compile Include="Bindings\SchlaegeZaehlenSteps.cs" />
-    <Compile Include="Bindings\ScorecardSteps.cs" />
     <Compile Include="Bindings\SpielbeendenSteps.cs" />
     <Compile Include="Bindings\TrackerDriverFixture.cs" />
     <Compile Include="Bindings\ZeigeErgebnisSteps.cs" />
@@ -56,11 +55,6 @@
       <DependentUpon>Begruessung.feature</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="Features\DruckeScorecard.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DruckeScorecard.feature</DependentUpon>
     </Compile>
     <Compile Include="Features\Hilfe.feature.cs">
       <AutoGen>True</AutoGen>
@@ -106,10 +100,6 @@
     <None Include="Features\Begruessung.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Begruessung.feature.cs</LastGenOutput>
-    </None>
-    <None Include="Features\DruckeScorecard.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>DruckeScorecard.feature.cs</LastGenOutput>
     </None>
     <None Include="Features\Hilfe.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>

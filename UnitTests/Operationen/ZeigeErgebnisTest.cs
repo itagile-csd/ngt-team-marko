@@ -16,11 +16,10 @@ namespace UnitTests.Operationen
         public void EinLoch1SchlagExpectGesamtwert1()
         {
             var scorecardMock = new Mock<IScorecard>();
-            scorecardMock.Setup(scorecard => scorecard.GesamtSchlaege).Returns(5);
+            scorecardMock.Setup(scorecard => scorecard.Print()).Returns("Printed");
             var ausgabe = new ZeigeErgebnis().FuehreAus(scorecardMock.Object);
-            var zeilen = ausgabe.Split(' ');
-            Assert.Contains("5", zeilen);
-            //Assert.That(zeilen.Length, Is.EqualTo(4));
+            Assert.AreEqual(ausgabe, "Printed");
+            
         }
     }
 }

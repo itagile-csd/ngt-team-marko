@@ -35,7 +35,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Befehl.cs" />
-    <Compile Include="Befehle\ScorecardBefehl.cs" />
     <Compile Include="Befehle\ZeigeErgebnisBefehl.cs" />
     <Compile Include="Befehle\SpielendeBefehl.cs" />
     <Compile Include="Befehle\HilfeBefehl.cs" />
