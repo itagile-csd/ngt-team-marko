@@ -4,9 +4,11 @@ namespace NerdGolfTracker.Befehle
 {
     public class LochwechselBefehl : Befehl
     {
+        public const string NAECHSTESLOCH = "Naechstes Loch";
+
         protected override string Kommando
         {
-            get { return "Naechstes Loch"; }
+            get { return NAECHSTESLOCH; }
         }
 
         public override IOperation Operation
@@ -20,7 +22,7 @@ namespace NerdGolfTracker.Befehle
         }
         protected override string Erklaerung
         {
-            get { return "bringt Dich zum naechsten Loch."; }
+            get { return NerdGolfTrackerResources.LochwechselBefehl_Erklaerung_bringt_Dich_zum_naechsten_Loch_; }
         }
     }
 

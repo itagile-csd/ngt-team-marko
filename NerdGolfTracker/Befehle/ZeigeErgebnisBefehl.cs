@@ -4,9 +4,11 @@ namespace NerdGolfTracker.Befehle
 {
     public class ZeigeErgebnisBefehl : Befehl
     {
+        public const string ZEIGEERGEBNIS = "Zeige Ergebnis";
+
         protected override string Kommando
         {
-            get { return "Zeige Ergebnis"; }
+            get { return ZEIGEERGEBNIS; }
         }
 
         public override IOperation Operation
@@ -21,7 +23,7 @@ namespace NerdGolfTracker.Befehle
 
         protected override string Erklaerung
         {
-            get { return "zeigt das Gesamtergebnis an."; }
+            get { return NerdGolfTrackerResources.ZeigeErgebnisBefehl_Erklaerung_zeigt_das_Gesamtergebnis_an_; }
         }
     }
 }

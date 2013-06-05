@@ -4,9 +4,11 @@ namespace NerdGolfTracker.Befehle
 {
     public class SchlagBefehl : Befehl
     {
+        public const string SCHLAGEBALL = "Schlage Ball";
+
         protected override string Kommando
         {
-            get { return "Schlage Ball"; }
+            get { return SCHLAGEBALL; }
         }
 
         public override IOperation Operation
@@ -19,7 +21,7 @@ namespace NerdGolfTracker.Befehle
         }
         protected override string Erklaerung
         {
-            get { return "zaehlt einen Schlag."; }
+            get { return NerdGolfTrackerResources.SchlagBefehl_Erklaerung_zaehlt_einen_Schlag_; }
         }
     }
 }

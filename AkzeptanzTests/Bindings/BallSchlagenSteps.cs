@@ -1,3 +1,5 @@
+using NerdGolfTracker;
+using NerdGolfTracker.Befehle;
 using TechTalk.SpecFlow;
 
 namespace AkzeptanzTests.Bindings
@@ -16,7 +18,7 @@ namespace AkzeptanzTests.Bindings
         [When(@".* Ball.* schlage.*")]
         public void SchlageBall()
         {
-            _driver.EmpfangeAnweisung("Schlage Ball");
+            _driver.EmpfangeAnweisung(SchlagBefehl.SCHLAGEBALL);
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using NUnit.Framework;
+using NerdGolfTracker;
 using NerdGolfTracker.Befehle;
 using NerdGolfTracker.Operationen;
 
@@ -15,7 +16,7 @@ namespace UnitTests.Befehle
         public void KommandoTest()
         {
             var befehl = new SpielendeBefehl();
-            Assert.IsTrue(befehl.IstZustaendigFuer("Ende"));
+            Assert.IsTrue(befehl.IstZustaendigFuer(SpielendeBefehl.ENDE));
         }
 
         [Test]

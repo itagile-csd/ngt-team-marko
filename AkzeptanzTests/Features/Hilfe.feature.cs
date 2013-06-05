@@ -10,6 +10,10 @@
 //  </auto-generated>
 // ------------------------------------------------------------------------------
 #region Designer generated code
+
+using NerdGolfTracker;
+using NerdGolfTracker.Befehle;
+
 #pragma warning disable
 namespace AkzeptanzTests.Features
 {
@@ -83,9 +87,9 @@ this.ScenarioSetup(scenarioInfo);
         [NUnit.Framework.DescriptionAttribute("Hilfe zu Kommandos")]
         [NUnit.Framework.TestCaseAttribute("Hilfe", null)]
         [NUnit.Framework.TestCaseAttribute("Schlage Ball", null)]
-        [NUnit.Framework.TestCaseAttribute("Naechstes Loch", null)]
-        [NUnit.Framework.TestCaseAttribute("Ende", null)]
-        [NUnit.Framework.TestCaseAttribute("Zeige Ergebnis", null)]
+        [NUnit.Framework.TestCaseAttribute(LochwechselBefehl.NAECHSTESLOCH, null)]
+        [NUnit.Framework.TestCaseAttribute(SpielendeBefehl.ENDE, null)]
+        [NUnit.Framework.TestCaseAttribute(ZeigeErgebnisBefehl.ZEIGEERGEBNIS, null)]
         public virtual void HilfeZuKommandos(string kommando, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Hilfe zu Kommandos", exampleTags);

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using NerdGolfTracker;
+using NerdGolfTracker.Befehle;
 using TechTalk.SpecFlow;
 
 namespace AkzeptanzTests.Bindings
@@ -19,7 +21,7 @@ namespace AkzeptanzTests.Bindings
         [When(@"ich das Spiel beende,")]
         public void RufeEndeAuf()
         {
-            _driver.EmpfangeAnweisung("Ende");
+            _driver.EmpfangeAnweisung(SpielendeBefehl.ENDE);
         }
 
         [Then(@"wird der NerdGolfTracker beendet\.")]

@@ -45,6 +45,11 @@
     <Compile Include="EinfacheScorecard.cs" />
     <Compile Include="IInterpreter.cs" />
     <Compile Include="IOperation.cs" />
+    <Compile Include="NerdGolfTrackerResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NerdGolfTrackerResources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Operationen\ZeigeErgebnis.cs" />
     <Compile Include="Operationen\Hilfe.cs" />
     <Compile Include="Operationen\Lochausgabe.cs" />
@@ -60,6 +65,12 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="NerdGolfTrackerResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>NerdGolfTrackerResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

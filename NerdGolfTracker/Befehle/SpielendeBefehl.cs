@@ -8,9 +8,11 @@ namespace NerdGolfTracker.Befehle
 {
     public class SpielendeBefehl : Befehl
     {
+        public const string ENDE = "Ende";
+
         protected override string Kommando
         {
-            get { return "Ende"; }
+            get { return ENDE; }
         }
 
         public override IOperation Operation
@@ -24,7 +26,7 @@ namespace NerdGolfTracker.Befehle
         }
         protected override string Erklaerung
         {
-            get { return "beendet das Spiel."; }
+            get { return NerdGolfTrackerResources.SpielendeBefehl_Erklaerung_beendet_das_Spiel_; }
         }
     }
 }

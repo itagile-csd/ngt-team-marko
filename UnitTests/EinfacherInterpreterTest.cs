@@ -2,6 +2,7 @@
 using NUnit.Framework;
 using NerdGolfTracker;
 using NerdGolfTracker.Operationen;
+using NerdGolfTracker.Befehle;
 
 namespace UnitTests
 {
@@ -9,11 +10,11 @@ namespace UnitTests
     class EinfacherInterpreterTest
     {
 
-        [TestCase("Naechstes Loch", typeof(Lochwechsel))]
-        [TestCase("Schlage Ball", typeof(Schlag))]
-        [TestCase("Hilfe", typeof(Hilfe))]
-        [TestCase("Zeige Ergebnis", typeof(ZeigeErgebnis))]
-        [TestCase("Ende", typeof(Spielende))]
+        [TestCase(LochwechselBefehl.NAECHSTESLOCH, typeof(Lochwechsel))]
+        [TestCase(SchlagBefehl.SCHLAGEBALL, typeof(Schlag))]
+        [TestCase(HilfeBefehl.HILFE, typeof(Hilfe))]
+        [TestCase(ZeigeErgebnisBefehl.ZEIGEERGEBNIS, typeof(ZeigeErgebnis))]
+        [TestCase(SpielendeBefehl.ENDE, typeof(Spielende))]
         public void FindetOperation(string kommando, Type operationstyp)
         {
             IInterpreter interpreter = new EinfacherInterpreter();
