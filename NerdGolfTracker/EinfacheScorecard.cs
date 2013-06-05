@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Text;
 
 namespace NerdGolfTracker
 {
@@ -28,6 +29,21 @@ namespace NerdGolfTracker
         public void ErhoeheAnzahlSchlaege()
         {
             m_SchlaegeProLoch[Lochnummer]++;
+        }
+
+        public string Print()
+        {
+            var ergStr = new StringBuilder();
+            foreach (var lochSchlag in m_SchlaegeProLoch)
+            {
+                string schlagName = "Schlag";
+                if (lochSchlag.Value != 1)
+                {
+                    schlagName = "Schlaege";
+                }
+                ergStr.Append(string.Format("Loch {0}:\t{1} {2}\n", lochSchlag.Key, lochSchlag.Value, schlagName));
+            }
+            return ergStr.ToString();
         }
 
         private int GetGesamtSchlaege()
