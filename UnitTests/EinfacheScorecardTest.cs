@@ -53,6 +53,24 @@ namespace UnitTests
         }
 
         [Test]
+
+        public void PrintScorecardEinSchlag()
+        {
+            _scorecard.ErhoeheAnzahlSchlaege();
+            string ergebnis = _scorecard.Print();
+            Assert.That(ergebnis.Contains("Loch 1:\t1 Schlag"));
+        }
+
+        [Test]
+        public void PrintScorecardZweiSchlaege()
+        {
+            _scorecard.ErhoeheAnzahlSchlaege();
+            _scorecard.ErhoeheAnzahlSchlaege();
+            string ergebnis = _scorecard.Print();
+            Assert.That(ergebnis.Contains("Loch 1:\t2 Schlaege"));
+        }
+
+        [Test]
         public void EndeTest()
         {
             _scorecard.SchliesseSpielAb();

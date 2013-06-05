@@ -35,6 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Befehl.cs" />
+    <Compile Include="Befehle\ScorecardBefehl.cs" />
     <Compile Include="Befehle\ZeigeErgebnisBefehl.cs" />
     <Compile Include="Befehle\SpielendeBefehl.cs" />
     <Compile Include="Befehle\HilfeBefehl.cs" />
@@ -45,11 +46,15 @@
     <Compile Include="EinfacheScorecard.cs" />
     <Compile Include="IInterpreter.cs" />
     <Compile Include="IOperation.cs" />
+
     <Compile Include="NerdGolfTrackerResources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>NerdGolfTrackerResources.resx</DependentUpon>
     </Compile>
+
+    <Compile Include="Operationen\Scorecard.cs" />
+
     <Compile Include="Operationen\ZeigeErgebnis.cs" />
     <Compile Include="Operationen\Hilfe.cs" />
     <Compile Include="Operationen\Lochausgabe.cs" />

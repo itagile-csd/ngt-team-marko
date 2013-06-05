@@ -47,10 +47,12 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Befehle\ScorecardBefehlTest.cs" />
     <Compile Include="Befehle\SpielendeBefehlTest.cs" />
     <Compile Include="EinfacherInterpreterTest.cs" />
     <Compile Include="EinfacheScorecardTest.cs" />
     <Compile Include="BefehlsTest.cs" />
+    <Compile Include="Operationen\ScorecardTest.cs" />
     <Compile Include="Operationen\ZeigeErgebnisTest.cs" />
     <Compile Include="Operationen\HilfeTest.cs" />
     <Compile Include="Operationen\LochausgabeTest.cs" />

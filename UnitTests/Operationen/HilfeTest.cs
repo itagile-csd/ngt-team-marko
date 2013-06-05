@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using NUnit.Framework;
+using NerdGolfTracker;
 using NerdGolfTracker.Operationen;
 
 namespace UnitTests.Operationen
@@ -15,7 +16,7 @@ namespace UnitTests.Operationen
         {
             var ausgabe = new Hilfe().FuehreAus(null);
             var zeilen = ausgabe.Split(new string[] { System.Environment.NewLine }, StringSplitOptions.None);
-            Assert.That(zeilen.Length, Is.EqualTo(5));
+            Assert.That(zeilen.Length, Is.EqualTo(new AlleBefehle().Befehle().Count + 1));
         }
     }
 }
