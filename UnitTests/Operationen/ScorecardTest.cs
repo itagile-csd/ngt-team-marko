@@ -20,5 +20,6 @@ namespace UnitTests.Operationen
             scorecardMock.Setup(sc => sc.Print()).Returns(scPrintResult);
             Assert.That(new Scorecard().FuehreAus(scorecardMock.Object),Is.EqualTo(scPrintResult));
         }
+
     }
 }

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="b1991f7a-2921-43d8-93fa-8d70f824ec44" name="re2675@MD141GTC 2013-06-05 10:53:44" runUser="WW004\re2675" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="abc51252-42f4-4525-9857-25ca84edc439">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="re2675_MD141GTC 2013-06-05 10_53_44">
+      <DeploymentItem filename="C:\Users\wd3110\Documents\Visual Studio 2010\Projects\ngt-team-marko\UnitTests\libs\Moq.dll" />
+      <DeploymentItem filename="C:\Users\wd3110\Documents\Visual Studio 2010\Projects\ngt-team-marko\NerdGolfTracker\bin\Debug\NerdGolfTracker.exe" />
+      <DeploymentItem filename="C:\Program Files (x86)\NUnit 2.6.2\bin\framework\nunit.framework.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-06-05T10:53:44.0925171+02:00" queuing="2013-06-05T10:53:48.5149593+02:00" start="2013-06-05T10:53:48.6839762+02:00" finish="2013-06-05T10:53:51.0611549+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="6" executed="6" passed="6" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ZustaendigkeitMitKuerzelTest" storage="c:\users\wd3110\documents\visual studio 2010\projects\ngt-team-marko\unittests\bin\debug\unittests.dll" id="64878b6d-15af-5de1-cc4a-3ef063b6620e">
+      <Execution id="a340d65f-7a6f-4d91-96eb-a0c6abe1dc61" />
+      <TestMethod codeBase="C:/Users/wd3110/Documents/Visual Studio 2010/Projects/ngt-team-marko/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.BefehlsTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ZustaendigkeitMitKuerzelTest" />
+    </UnitTest>
+    <UnitTest name="HilfeOhneKuerzelTest" storage="c:\users\wd3110\documents\visual studio 2010\projects\ngt-team-marko\unittests\bin\debug\unittests.dll" id="febd9ca5-c6b7-22b2-1765-10fd7d619a8a">
+      <Execution id="39f291f4-2c56-442e-9857-354f2c912624" />
+      <TestMethod codeBase="C:/Users/wd3110/Documents/Visual Studio 2010/Projects/ngt-team-marko/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.BefehlsTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="HilfeOhneKuerzelTest" />
+    </UnitTest>
+    <UnitTest name="ZustaendigkeitOhneKuerzelTest" storage="c:\users\wd3110\documents\visual studio 2010\projects\ngt-team-marko\unittests\bin\debug\unittests.dll" id="08155d76-5912-a8fc-f5bd-d8b95e8f3dbb">
+      <Execution id="1fe679d1-1374-4a51-8916-fac7343d9138" />
+      <TestMethod codeBase="C:/Users/wd3110/Documents/Visual Studio 2010/Projects/ngt-team-marko/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.BefehlsTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ZustaendigkeitOhneKuerzelTest" />
+    </UnitTest>
+    <UnitTest name="ZustaendigkeitNegativeTest" storage="c:\users\wd3110\documents\visual studio 2010\projects\ngt-team-marko\unittests\bin\debug\unittests.dll" id="2bdb68db-70d7-6b77-1469-bb28d2c6ab6b">
+      <Execution id="f471b0cd-1ab4-46d3-a3b8-1daab3738a16" />
+      <TestMethod codeBase="C:/Users/wd3110/Documents/Visual Studio 2010/Projects/ngt-team-marko/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.BefehlsTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ZustaendigkeitNegativeTest" />
+    </UnitTest>
+    <UnitTest name="HilfeMitKuerzelTest" storage="c:\users\wd3110\documents\visual studio 2010\projects\ngt-team-marko\unittests\bin\debug\unittests.dll" id="9fc2e062-15b1-cf30-d60f-a09cb2b269ef">
+      <Execution id="0a6d87ce-9b03-4fe6-b46c-48c684e0b7d5" />
+      <TestMethod codeBase="C:/Users/wd3110/Documents/Visual Studio 2010/Projects/ngt-team-marko/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.BefehlsTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="HilfeMitKuerzelTest" />
+    </UnitTest>
+    <UnitTest name="ZustaendigkeitMitKuerzelTest2" storage="c:\users\wd3110\documents\visual studio 2010\projects\ngt-team-marko\unittests\bin\debug\unittests.dll" id="8d4569d9-f2e0-d412-7dad-ccc6ce25d1fc">
+      <Execution id="d57f8f29-8790-4d21-b3f8-1a512eb1167f" />
+      <TestMethod codeBase="C:/Users/wd3110/Documents/Visual Studio 2010/Projects/ngt-team-marko/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.BefehlsTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ZustaendigkeitMitKuerzelTest2" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="08155d76-5912-a8fc-f5bd-d8b95e8f3dbb" executionId="1fe679d1-1374-4a51-8916-fac7343d9138" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="febd9ca5-c6b7-22b2-1765-10fd7d619a8a" executionId="39f291f4-2c56-442e-9857-354f2c912624" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="64878b6d-15af-5de1-cc4a-3ef063b6620e" executionId="a340d65f-7a6f-4d91-96eb-a0c6abe1dc61" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8d4569d9-f2e0-d412-7dad-ccc6ce25d1fc" executionId="d57f8f29-8790-4d21-b3f8-1a512eb1167f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2bdb68db-70d7-6b77-1469-bb28d2c6ab6b" executionId="f471b0cd-1ab4-46d3-a3b8-1daab3738a16" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9fc2e062-15b1-cf30-d60f-a09cb2b269ef" executionId="0a6d87ce-9b03-4fe6-b46c-48c684e0b7d5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="1fe679d1-1374-4a51-8916-fac7343d9138" testId="08155d76-5912-a8fc-f5bd-d8b95e8f3dbb" testName="ZustaendigkeitOhneKuerzelTest" computerName="MD141GTC" duration="00:00:00.0182154" startTime="2013-06-05T10:53:48.8209899+02:00" endTime="2013-06-05T10:53:50.6691549+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1fe679d1-1374-4a51-8916-fac7343d9138">
+    </UnitTestResult>
+    <UnitTestResult executionId="39f291f4-2c56-442e-9857-354f2c912624" testId="febd9ca5-c6b7-22b2-1765-10fd7d619a8a" testName="HilfeOhneKuerzelTest" computerName="MD141GTC" duration="00:00:00.0007468" startTime="2013-06-05T10:53:50.7541549+02:00" endTime="2013-06-05T10:53:50.7621549+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="39f291f4-2c56-442e-9857-354f2c912624">
+    </UnitTestResult>
+    <UnitTestResult executionId="a340d65f-7a6f-4d91-96eb-a0c6abe1dc61" testId="64878b6d-15af-5de1-cc4a-3ef063b6620e" testName="ZustaendigkeitMitKuerzelTest" computerName="MD141GTC" duration="00:00:00.0002903" startTime="2013-06-05T10:53:50.8071549+02:00" endTime="2013-06-05T10:53:50.8241549+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a340d65f-7a6f-4d91-96eb-a0c6abe1dc61">
+    </UnitTestResult>
+    <UnitTestResult executionId="d57f8f29-8790-4d21-b3f8-1a512eb1167f" testId="8d4569d9-f2e0-d412-7dad-ccc6ce25d1fc" testName="ZustaendigkeitMitKuerzelTest2" computerName="MD141GTC" duration="00:00:00.0001972" startTime="2013-06-05T10:53:50.8401549+02:00" endTime="2013-06-05T10:53:50.8481549+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d57f8f29-8790-4d21-b3f8-1a512eb1167f">
+    </UnitTestResult>
+    <UnitTestResult executionId="f471b0cd-1ab4-46d3-a3b8-1daab3738a16" testId="2bdb68db-70d7-6b77-1469-bb28d2c6ab6b" testName="ZustaendigkeitNegativeTest" computerName="MD141GTC" duration="00:00:00.0002089" startTime="2013-06-05T10:53:50.8551549+02:00" endTime="2013-06-05T10:53:50.8651549+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f471b0cd-1ab4-46d3-a3b8-1daab3738a16">
+    </UnitTestResult>
+    <UnitTestResult executionId="0a6d87ce-9b03-4fe6-b46c-48c684e0b7d5" testId="9fc2e062-15b1-cf30-d60f-a09cb2b269ef" testName="HilfeMitKuerzelTest" computerName="MD141GTC" duration="00:00:00.0002214" startTime="2013-06-05T10:53:50.8781549+02:00" endTime="2013-06-05T10:53:50.8881549+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0a6d87ce-9b03-4fe6-b46c-48c684e0b7d5">
+    </UnitTestResult>
+  </Results>
+</TestRun>
