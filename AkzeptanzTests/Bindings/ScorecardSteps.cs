@@ -33,6 +33,8 @@ namespace AkzeptanzTests.Bindings
         public void PruefeDruckergebnis()
         {
             _driver.AssertThatAntwortContains("Loch");
+            _driver.AssertThatAntwortContains("===");
+            _driver.AssertThatAntwortContains("Gesamt:");
         }
     }
 }

@@ -44,17 +44,15 @@
     <Compile Include="AlleBefehle.cs" />
     <Compile Include="EinfacherInterpreter.cs" />
     <Compile Include="EinfacheScorecard.cs" />
+    <Compile Include="Hilfsmittel\AusgabeErzeuger.cs" />
     <Compile Include="IInterpreter.cs" />
     <Compile Include="IOperation.cs" />
-
     <Compile Include="NerdGolfTrackerResources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>NerdGolfTrackerResources.resx</DependentUpon>
     </Compile>
-
     <Compile Include="Operationen\Scorecard.cs" />
-
     <Compile Include="Operationen\ZeigeErgebnis.cs" />
     <Compile Include="Operationen\Hilfe.cs" />
     <Compile Include="Operationen\Lochausgabe.cs" />

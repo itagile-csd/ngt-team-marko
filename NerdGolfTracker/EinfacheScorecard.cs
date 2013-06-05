@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Text;
+using NerdGolfTracker.Hilfsmittel;
 
 namespace NerdGolfTracker
 {
@@ -66,18 +67,20 @@ namespace NerdGolfTracker
         public string Print()
         {
             var ergStr = new StringBuilder();
+            
             foreach (var lochSchlag in m_SchlaegeProLoch)
             {
-                string schlagName = "Schlag";
-                if (lochSchlag.Value != 1)
-                {
-                    schlagName = "Schlaege";
-                }
-                ergStr.Append(string.Format("Loch {0}:\t{1} {2}\n", lochSchlag.Key, lochSchlag.Value, schlagName));
+                ergStr.Append(string.Format("Loch {0:##}: {1}\n", lochSchlag.Key,  AusgabeErzeuger.Schlaege(lochSchlag.Value)));
             }
+            string gesamtAusgabe = AusgabeErzeuger.GesamtErgebnis(GetGesamtSchlaege());
+            ergStr.Append(AusgabeErzeuger.ErzeugeTrenner(gesamtAusgabe.Length));
+            ergStr.Append("\n");
+            ergStr.Append(gesamtAusgabe);
+
             return ergStr.ToString();
         }
 
+        
         private int GetGesamtSchlaege()
         {
             int gesamtSchlaege = 0;
